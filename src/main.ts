@@ -3,7 +3,11 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors({origin: process.env.PATH_ORIGIN});
+  app.enableCors({origin: "https://bbva-front.vercel.app/",
+  methods: "GET,POST,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+});
   await app.listen(3000);
 }
 bootstrap();
