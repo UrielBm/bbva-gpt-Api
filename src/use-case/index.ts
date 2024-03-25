@@ -1,5 +1,5 @@
 export * from "./createThreadUseCase"
 export * from "./createMessageUseCase"
-export * from "./CreateRunUseCase"
+export * from "./createRunUseCase"
 export * from "./checkStatusUseCase"
 export * from "./getMessagesListUseCase"
